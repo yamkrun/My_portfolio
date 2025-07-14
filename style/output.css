@@ -34,6 +34,8 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
     --font-weight-semibold: 600;
@@ -823,6 +825,11 @@
       display: none;
     }
   }
+  .lg\:h-67 {
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 67);
+    }
+  }
   .lg\:h-90 {
     @media (width >= 64rem) {
       height: calc(var(--spacing) * 90);
@@ -841,6 +848,21 @@
   .lg\:w-50 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 50);
+    }
+  }
+  .lg\:w-75 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 75);
+    }
+  }
+  .lg\:w-76 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 76);
+    }
+  }
+  .lg\:w-77 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 77);
     }
   }
   .lg\:w-90 {
@@ -932,6 +954,12 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
+  .lg\:text-7xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-7xl);
+      line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
   .lg\:text-8xl {
     @media (width >= 64rem) {
       font-size: var(--text-8xl);
@@ -942,6 +970,51 @@
     @media (width >= 64rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .xl\:flex {
+    @media (width >= 80rem) {
+      display: flex;
+    }
+  }
+  .xl\:grid {
+    @media (width >= 80rem) {
+      display: grid;
+    }
+  }
+  .xl\:h-90 {
+    @media (width >= 80rem) {
+      height: calc(var(--spacing) * 90);
+    }
+  }
+  .xl\:w-100 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 100);
+    }
+  }
+  .xl\:grid-cols-3 {
+    @media (width >= 80rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .xl\:place-items-center {
+    @media (width >= 80rem) {
+      place-items: center;
+    }
+  }
+  .xl\:items-center {
+    @media (width >= 80rem) {
+      align-items: center;
+    }
+  }
+  .xl\:justify-center {
+    @media (width >= 80rem) {
+      justify-content: center;
+    }
+  }
+  .xl\:overflow-hidden {
+    @media (width >= 80rem) {
+      overflow: hidden;
     }
   }
   .dark\:text-white {
