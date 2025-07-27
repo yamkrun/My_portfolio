@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style/output.css">
-    <link rel="stylesheet" href="./style/style.css">
+    <title>projects.yamiRK</title>
+    <script src="./projectos.js" defer></script>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&display=swap" rel="stylesheet">
-   <script src="./main.js" defer type="module"></script>
 </head>
-<body class="flex flex-col bg-[#110823] text-[#F4F4F4] gap-4">
-    <header class="flex items-center justify-between  h-[10%] p-4">
+<body class="flex flex-col w-full bg-[#110823] text-[#F4F4F4] gap-4">
+     <header class="flex items-center justify-between  h-[10%] p-4">
         <p class="font-bold hidden sm:flex lg:text-2xl">Yami.RK</p>
         <nav class="hidden sm:flex font-bold pt-4 gap-6">
                 <a href="#home" class=" hover:bg-violet-500/10 hover:backdrop-blur hover:drop-shadow-[0_0_12px_violet] hover:scale-105 p-2 rounded-2xl cursor-pointer focus:drop-shadow-[0_0_12px_violet] focus:scale-105">Home</a>
@@ -35,7 +35,7 @@
                 <div class="border-white border m-4 w-35"></div>
                 <li class="cerrar font-bold"><a href="#skills">Skills</a></li>
                 <div class="border-white border m-4 w-35"></div>
-                <li class="cerrar font-bold"><a href="./Proyectos">Projects</a></li>
+                <li class="cerrar font-bold"><a href="#projects">Projects</a></li>
                 <div class="border-white border m-4 w-35"></div>
                 <li class="cerrar font-bold"><a href="#contact">Contact</a></li>
                 <div class="border-white border m-4 w-35"></div>
@@ -50,61 +50,13 @@
          </svg></a>
     
     </header>
-    <main class="h-[70%]">
-        <!--hero-->
-        
-        <section id="home" class="hero">
-             <div class="lg:flex lg:justify-center lg:items-center lg:m-12">
-            <div class="bg-[#886AB5] w-50 h-45 m-4 hidden lg:flex lg:w-76 lg:h-67 xl:w-100 xl:h-90">
-                    <img src="./img/me-Photoroom.png" alt="i" class="w-50 lg:w-77 lg:h-67 xl:w-100 xl:h-90"></div>
-            <div class=" flex flex-col items-center m-4 p-4 gap-4 lg:gap-15">
-                    <h1 class="text-4xl font-bold lg:text-7xl xl:8xl">Hi! I'm Yami .</h1>
-                <div class="bg-[#886AB5] w-50 h-45 m-4 lg:hidden">
-                    <img src="./img/me-Photoroom.png" alt="i" class="w-50"></div>
-                <p class="text-center text-2xl lg:text-4xl">Front-End Developer passionate about turning ideas into code.</p>
-                  <a href="#projects"><button class=" bg-violet-700 rounded-2xl text-xs p-2 w-45 hover:bg-violet-900 hover:scale-105 focus:bg-violet-900 focus:scale-105 cursor-pointer lg:text-2xl lg:p-4 lg:w-50">
-                   <strong>My projects</strong>
-               </button></a></div>
-               </div>
-        </section>
-       <!--who-i-am-->
-        <section class="who-i-am flex flex-col items-center m-8 p-4 text-center gap-4 lg:m-20 ">
-            <h2 class="text-2xl font-bold lg:text-5xl lg:m-8">Who am i?</h2>
-            <p class="text-xl lg:text-4xl">Hi! I’m Yami, a curious and creative front-end developer in training.
-                I'm inspired by design, technology, and creative expressions like art
-                and music. I'm starting this journey with enthusiasm, and I love turning 
-                ideas into engaging digital experiences.</p>
-        </section>
-        <!--my-skills-->
-        <section id="skills" class="skills my-8">
-            <h2 class="text-center text-[#F4F4F4] font-bold text-2xl lg:text-5xl lg:m-8">My Skills</h2>
-            <div id="herramientas" class="grid grid-cols-2 sm:grid-cols-3 place-items-center m-4 p-4 gap-1 sm:mx-16 xl:grid-cols-4 lg:mx-[20%]"> 
-            </div>
-
-        </section>
-    </main>
-    <footer class="flex flex-col items-center justify-center ">
-        <form id="contact" class="flex flex-col items-center w-80 p-10 gap-4 m-4 rounded-2xl bg-[#886AB5]">
-            <h2 class="text-2xl font-bold mb-6 text-center">Contact Me</h2>
-            
-            <label for="name" class="sr-only">Your Name</label>
-            <input type="text" id="name" placeholder="Your name" 
-            class="w-full rounded-md border-[#886AB5] border-2 bg-[#FAFAFA] placeholder-violet-400 placeholder:font-bold text-black focus:border-violet-800 outline-none">
-            
-            <label for="email" class="sr-only">Email Address</label>
-             <input type="email" id="email" placeholder="Email Address"
-             class="w-full rounded-md border-2 border-[#886AB5]  bg-[#FAFAFA] placeholder-violet-400 placeholder:font-bold text-black focus:border-violet-800 outline-none">
-            
-             <label for="menssage" class="sr-only">Chat Here</label>
-              <textarea id="menssage" rows="5"  placeholder="Chat Here"
-              class="w-full rounded-md border-2 border-[#886AB5] resize-none bg-[#FAFAFA] placeholder-violet-400 placeholder:font-bold text-black focus:border-violet-800 outline-none"></textarea>
-            
-              <button
-               class="bg-violet-700 rounded-2xl font-bold text-xs p-2 w-45 hover:bg-violet-800 hover:scale-105 focus:bg-violet-900 focus:scale-105 cursor-pointer">
-             Send Message
-              </button>
-        </form>
-        <div class="flex gap-4 p-4">
+    <h1 class="text-2xl m-20 font-bold lg:text-5xl text-center">My Projects</h1>
+    <section id="projects" class="projects flex flex-col w-full my-4">
+        <div id="proyectos" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 place-items-center w-full mx-auto px-4">      
+        </div>
+    </section>
+    <footer>
+    <div class="flex justify-center m-8 gap-4 p-4">
              
             <a href="https://www.instagram.com/yamila_rkrunfli?igsh=YnpxOWhocXd1Y2J1"><svg class="w-6 h-6 text-[#fafafa]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
          <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
@@ -122,8 +74,6 @@
          <path fill="currentColor" d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z"/>
      </svg></a>
 
-        </div>
-    </footer>
-    
+        </div></footer>
 </body>
 </html>
