@@ -41,7 +41,7 @@ function mostrarProyectos(array) {
           <h3 class="text-violet-300 text-xl font-semibold">${array[i].nombre}</h3>
           
           <a href="${array[i].link}">
-            <button class="font-bold bg-violet-700 text-white px-4 py-2 rounded-xl text-sm hover:bg-violet-800 transition-all cursor-pointer">
+            <button class="font-bold bg-violet-700 text-white px-4 py-2 rounded-xl text-sm hover:bg-violet-900 transition-all cursor-pointer">
               Ver Proyecto
             </button>
           </a>
